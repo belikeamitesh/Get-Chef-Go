@@ -3,7 +3,9 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Customize from "./components/Customize";
 import Checkout from "./components/Checkout";
+import Checkout1 from "./components/Checkout1"
 import Customize1 from "./components/Customize1";
+import Home from "./components/Home";
 
 function App() {
   const [ingredients, setIngredients] = useState({
@@ -49,10 +51,15 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/pizza">
             <Customize
               ingredients={ingredients}
               setIngredients={setIngredients}
             />
+          </Route>
+          <Route exact path="/sandwich">
             <Customize1
               ingredients={ingredients1}
               setIngredients={setIngredients1}
@@ -62,7 +69,7 @@ function App() {
             <Checkout ingredients={ingredients} />
           </Route>
           <Route path="/checkout1">
-            <Checkout ingredients={ingredients1} />
+            <Checkout1 ingredients={ingredients1} />
           </Route>
         </Switch>
       </Router>

@@ -168,6 +168,12 @@ export default function Customize({ ingredients, setIngredients }) {
         >
           Proceed to Checkout
         </button>
+        <button
+          onClick={() => history.push("/")}
+          className="proceedToCheckout"
+        >
+          Back to Home
+        </button>
       </div>
     </div>
   );

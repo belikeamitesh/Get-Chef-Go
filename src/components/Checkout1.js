@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Deliveryman from "../assets/delivery-removebg-preview.png";
 
-export default function Checkout({ ingredients }) {
+
+export default function Checkout1({ ingredients }) {
   const history = useHistory();
   const [success, setSuccess] = useState(false);
 
@@ -26,7 +27,7 @@ export default function Checkout({ ingredients }) {
           })}
           <button
             className="proceedToCheckout"
-            onClick={() => history.push("/pizza")}
+            onClick={() => history.push("/sandwich")}
           >
             Go Back
           </button>
@@ -44,12 +45,12 @@ export default function Checkout({ ingredients }) {
           <div style={{ textAlign: "center" }}>
             <img src={Deliveryman} alt="pizzaman" height="300px" />
             <div style={{ fontFamily: "Open Sans Condensed", fontSize: 35 }}>
-            Order Recieved, Thank you for ordering
+              Order Recieved, Thank you for ordering
             </div>
             <div>
               Your Order number is : Order #{Math.round(Math.random() * 100000)}
             </div>
-            <div style={{fontSize: 20 }}>
+            <div style={{ fontSize: 20 }}>
               Your food will be on the way in 20-30 min.
             </div>
           </div>
