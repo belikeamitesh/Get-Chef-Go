@@ -6,6 +6,7 @@ import Checkout from "./components/Checkout";
 import Customize1 from "./components/Customize1";
 
 function App() {
+  const a=10;
   const [ingredients, setIngredients] = useState({
     basil: false,
     cheese: false,
