@@ -3,10 +3,11 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Customize from "./components/Customize";
 import Checkout from "./components/Checkout";
-import Checkout1 from "./components/Checkout1"
+import Checkout1 from "./components/Checkout1";
+import Checkout2 from "./components/Checkout2";
 import Customize1 from "./components/Customize1";
 import Home from "./components/Home";
-
+import Customize2 from "./components/Customize2";
 function App() {
   const [ingredients, setIngredients] = useState({
     basil: false,
@@ -25,6 +26,16 @@ function App() {
     pineapple: false,
     tomato: false,
   });
+
+  const [ingredients2, setIngredients2] = useState({
+    basil: false,
+    cheese: false,
+    mushroom: false,
+    olive: false,
+    pineapple: false,
+    tomato: false,
+  });
+
 
   
 
@@ -65,11 +76,20 @@ function App() {
               setIngredients={setIngredients1}
             />
           </Route>
+          <Route exact path="/noodles">
+            <Customize2
+              ingredients={ingredients2}
+              setIngredients={setIngredients2}
+            />
+          </Route>
           <Route path="/checkout">
             <Checkout ingredients={ingredients} />
           </Route>
           <Route path="/checkout1">
             <Checkout1 ingredients={ingredients1} />
+          </Route>
+          <Route path="/checkout2">
+            <Checkout2 ingredients={ingredients2} />
           </Route>
         </Switch>
       </Router>
