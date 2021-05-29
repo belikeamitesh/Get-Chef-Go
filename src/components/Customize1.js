@@ -3,7 +3,7 @@ import Cheese from "../assets/Cheese-removebg-preview.png";
 import Onion from "../assets/2-removebg-preview.png";
 import Bread from "../assets/Bread-removebg-preview.png";
 import Ketchup from "../assets/ketchup-removebg-preview.png";
-import Pineapple from "../assets/Pineapple.png";
+// import Pineapple from "../assets/Pineapple.png";
 import Mushroom from "../assets/Mushroom.png";
 // import Basil from "../assets/Basil.png";
 import Tomato from "../assets/Tomato.png";
@@ -48,7 +48,7 @@ export default function Customize1({ ingredients, setIngredients }) {
             <img src={Ketchup} alt="Sandwich Ketchup" height="100%" width="100%" />
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{
               y: ingredients["pineapple"] ? 100 : -100,
@@ -58,7 +58,7 @@ export default function Customize1({ ingredients, setIngredients }) {
             className="ingredients z3"
           >
             <img src={Pineapple} alt="Pizza Base" height="100%" width="100%" />
-          </motion.div>
+          </motion.div> */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
@@ -101,7 +101,7 @@ export default function Customize1({ ingredients, setIngredients }) {
         </div>
       </div>
       <div style={{ flex: 1, padding: 40 }}>
-        <label className="container-checkbox">
+        {/* <label className="container-checkbox">
           Pineapple
           <input
             type="checkbox"
@@ -111,7 +111,7 @@ export default function Customize1({ ingredients, setIngredients }) {
             }
           />
           <span className="checkmark"></span>
-        </label>
+        </label> */}
         <label className="container-checkbox">
           Onions
           <input
@@ -167,7 +167,7 @@ export default function Customize1({ ingredients, setIngredients }) {
           onClick={() => history.push("/checkout1")}
           className="proceedToCheckout"
         >
-          Proceed to Checkout
+          Checkout
         </button>
         <button
           onClick={() => history.push("/")}

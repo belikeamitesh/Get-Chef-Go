@@ -19,10 +19,10 @@ function App() {
   });
 
   const [ingredients1, setIngredients1] = useState({
-    basil: false,
+    onion: false,
     cheese: false,
     mushroom: false,
-    olive: false,
+    ketchup: false,
     pineapple: false,
     tomato: false,
   });

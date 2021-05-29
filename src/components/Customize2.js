@@ -1,11 +1,11 @@
 import React from "react";
-import Cheese from "../assets/BaseCheese.png";
+import Chicken from "../assets/chicken_toppings.png";
 import Noodles from "../assets/noodles.png";
 import Olive from "../assets/Olive.png";
-import Pineapple from "../assets/Pineapple.png";
+// import Pineapple from "../assets/Pineapple.png";
 import Mushroom from "../assets/Mushroom.png";
 import Basil from "../assets/Basil.png";
-import Tomato from "../assets/Tomato.png";
+import Tomato from "../assets/ketchup.png";
 import { motion } from "framer-motion";
 import { useHistory } from "react-router-dom";
 
@@ -47,7 +47,7 @@ export default function Customize2({ ingredients, setIngredients }) {
             <img src={Olive} alt="Pizza Base" height="100%" width="100%" />
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{
               y: ingredients["pineapple"] ? 100 : -100,
@@ -57,12 +57,12 @@ export default function Customize2({ ingredients, setIngredients }) {
             className="ingredients z3"
           >
             <img src={Pineapple} alt="Pizza Base" height="100%" width="100%" />
-          </motion.div>
+          </motion.div> */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
-              y: ingredients["tomato"] ? 100 : -100,
-              opacity: ingredients["tomato"] ? 1 : 0,
+              y: ingredients["ketchup"] ? 100 : -100,
+              opacity: ingredients["ketchup"] ? 1 : 0,
             }}
             transition={{ duration: 1 }}
             className="ingredients z4"
@@ -74,12 +74,12 @@ export default function Customize2({ ingredients, setIngredients }) {
             animate={{
               // y: ingredients["cheese"] ? 100 : -100,
               // opacity: ingredients["cheese"] ? 1 : 0,
-              scale: ingredients["cheese"] ? 1 : 0,
+              scale: ingredients["chicken"] ? 1 : 0,
             }}
             transition={{ duration: 0.3 }}
             className="cheese z1"
           >
-            <img src={Cheese} alt="Cheese" height="100%" width="100%" />
+            <img src={Chicken} alt="Chicken" height="100%" width="100%" />
           </motion.div>
 
           <motion.div
@@ -100,7 +100,7 @@ export default function Customize2({ ingredients, setIngredients }) {
         </div>
       </div>
       <div style={{ flex: 1, padding: 40 }}>
-        <label className="container-checkbox">
+        {/* <label className="container-checkbox">
           Pineapple
           <input
             type="checkbox"
@@ -110,7 +110,7 @@ export default function Customize2({ ingredients, setIngredients }) {
             }
           />
           <span className="checkmark"></span>
-        </label>
+        </label> */}
         <label className="container-checkbox">
           Basil
           <input
@@ -130,12 +130,12 @@ export default function Customize2({ ingredients, setIngredients }) {
           <span className="checkmark"></span>
         </label>
         <label className="container-checkbox">
-          Tomato
+          Ketchup
           <input
             type="checkbox"
-            checked={ingredients["tomato"]}
+            checked={ingredients["ketchup"]}
             onChange={(event) =>
-              onChange(event.currentTarget.checked, "tomato")
+              onChange(event.currentTarget.checked, "ketchup")
             }
           />
           <span className="checkmark"></span>
@@ -152,12 +152,12 @@ export default function Customize2({ ingredients, setIngredients }) {
           <span className="checkmark"></span>
         </label>
         <label className="container-checkbox">
-          Cheese
+          Chicken Toppings
           <input
             type="checkbox"
-            checked={ingredients["cheese"]}
+            checked={ingredients["Chicken"]}
             onChange={(event) =>
-              onChange(event.currentTarget.checked, "cheese")
+              onChange(event.currentTarget.checked, "chicken")
             }
           />
           <span className="checkmark"></span>
@@ -166,7 +166,7 @@ export default function Customize2({ ingredients, setIngredients }) {
           onClick={() => history.push("/checkout2")}
           className="proceedToCheckout"
         >
-          Proceed to Checkout
+          Checkout
         </button>
         <button
           onClick={() => history.push("/")}

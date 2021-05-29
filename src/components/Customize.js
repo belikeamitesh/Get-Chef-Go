@@ -166,7 +166,7 @@ export default function Customize({ ingredients, setIngredients }) {
           onClick={() => history.push("/checkout")}
           className="proceedToCheckout"
         >
-          Proceed to Checkout
+          Checkout
         </button>
         <button
           onClick={() => history.push("/")}

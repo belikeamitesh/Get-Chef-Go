@@ -2,7 +2,7 @@ import React from 'react'
 import { useHistory } from "react-router-dom";
 import Pizza from '../assets/pizza-removebg-preview.png';
 import Sandwich from '../assets/sandwich-removebg-preview.png'
-
+import Noodles from '../assets/noodle.png';
 
 function Home() {
     let history = useHistory();
@@ -20,7 +20,7 @@ function Home() {
             <button style={{fontSize:"30px",borderRadius:"10px",background:"yellow",boxShadow:"5px 5px"}} onClick={() => history.push("/sandwich")}>Buy a Sandwich</button>
             </div>
             <div style={{ border:"1px solid black",height:"180px",width:"300px",margin:"auto"}}>
-            <img src={Pizza} alt="Pizza" style={{height:"150px"}}/>
+            <img src={Noodles} alt="Pizza" style={{height:"150px"}}/>
             <button style={{fontSize:"30px",borderRadius:"10px",background:"yellow",boxShadow:"5px 5px"}} onClick={() => history.push("/noodles")}>Buy Noodles</button>
             </div>
             
