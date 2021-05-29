@@ -4,3 +4,5 @@
 * `npm install` 
 * `npm start`
 
+# Project name
+Get Chef Go
