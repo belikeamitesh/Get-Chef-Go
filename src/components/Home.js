@@ -21,7 +21,7 @@ function Home() {
             </div>
             <div style={{ border:"1px solid black",height:"180px",width:"300px",margin:"auto"}}>
             <img src={Pizza} alt="Pizza" style={{height:"150px"}}/>
-            <button style={{fontSize:"30px",borderRadius:"10px",background:"yellow",boxShadow:"5px 5px"}} onClick={() => history.push("/pizza")}>Buy a Drink</button>
+            <button style={{fontSize:"30px",borderRadius:"10px",background:"yellow",boxShadow:"5px 5px"}} onClick={() => history.push("/noodles")}>Buy Noodles</button>
             </div>
             
             <div style={{ border:"1px solid black",height:"180px",width:"300px",margin:"auto"}}>
