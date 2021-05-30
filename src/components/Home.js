@@ -4,7 +4,7 @@ import Pizza from '../assets/pizza-removebg-preview.png';
 import Sandwich from '../assets/sandwich-removebg-preview.png'
 import Noodles from '../assets/noodle.png';
 import Drinks from '../assets/drink.png';
-
+import Burger from '../assets/burger.png';
 function Home() {
     let history = useHistory();
     return (
@@ -21,7 +21,7 @@ function Home() {
             <button style={{fontSize:"30px",borderRadius:"10px",background:"yellow",boxShadow:"5px 5px"}} onClick={() => history.push("/sandwich")}>Buy a Sandwich</button>
             </div>
             <div style={{ border:"1px solid black",height:"180px",width:"300px",margin:"auto"}}>
-            <img src={Noodles} alt="Pizza" style={{height:"160px",width:"180px"}}/>
+            <img src={Noodles} alt="Pizza" style={{height:"150px",width:"180px"}}/>
             <button style={{fontSize:"30px",borderRadius:"10px",background:"yellow",boxShadow:"5px 5px"}} onClick={() => history.push("/noodles")}>Buy Noodles</button>
             </div>
             
@@ -31,8 +31,8 @@ function Home() {
             </div>
 
             <div style={{ border:"1px solid black",height:"180px",width:"300px",margin:"auto"}}>
-            <img src={Pizza} alt="Pizza" style={{height:"150px"}} />
-            <button style={{fontSize:"30px",borderRadius:"10px",background:"yellow",boxShadow:"5px 5px"}} onClick={() => history.push("/pizza")}>Buy a cofee</button>
+            <img src={Burger} alt="Pizza" style={{height:"150px"}} />
+            <button style={{fontSize:"30px",borderRadius:"10px",background:"yellow",boxShadow:"5px 5px"}} onClick={() => history.push("/burger")}>Buy a Burger</button>
             </div>
             </div>
         </div>

@@ -42,18 +42,18 @@ export default function Checkout1({ ingredients }) {
       </div>
       <div style={{ flex: 1 }}>
         {success && (
-          <div style={{ textAlign: "center" }}>
-            <img src={Deliveryman} alt="deliveryman" height="300px" />
-            <div style={{ fontFamily: "Open Sans Condensed", fontSize: 35 }}>
-              Order Recieved, Thank you for ordering
-            </div>
-            <div>
-              Your Order number is : Order #{Math.round(Math.random() * 100000)}
-            </div>
-            <div style={{ fontSize: 20 }}>
-              Your food will be on the way in 20-30 min.
-            </div>
+          <div style={{ textAlign: "center",border:"5px solid black",borderRadius:"10px"}}>
+          <img src={Deliveryman} alt="deliveryman" height="300px" />
+          <div style={{ fontSize: 35,margin:"auto" }}>
+          Order Recieved, Thank you for ordering
           </div>
+          <div>
+            Your Order number is : Order #{Math.round(Math.random() * 100000)}
+          </div>
+          <div style={{fontSize: 20 ,marginBottom:"30px" }}>
+            Your Drinks will be on the way in 20-30 min.
+          </div>
+        </div>
         )}
       </div>
     </div>
