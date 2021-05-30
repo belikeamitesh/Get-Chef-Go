@@ -5,9 +5,11 @@ import Customize from "./components/Customize";
 import Checkout from "./components/Checkout";
 import Checkout1 from "./components/Checkout1";
 import Checkout2 from "./components/Checkout2";
+import Checkout3 from "./components/Checkout3";
 import Customize1 from "./components/Customize1";
 import Home from "./components/Home";
 import Customize2 from "./components/Customize2";
+import Customize3 from "./components/Customize3";
 function App() {
   const [ingredients, setIngredients] = useState({
     basil: false,
@@ -36,6 +38,15 @@ function App() {
     tomato: false,
   });
 
+  const [ingredients3, setIngredients3] = useState({
+    basil: false,
+    cheese: false,
+    mushroom: false,
+    olive: false,
+    pineapple: false,
+    tomato: false,
+  });
+
 
   
 
@@ -45,15 +56,6 @@ function App() {
       setIngredients(JSON.parse(data));
     }
   }, []);
-
-  useEffect(() => {
-    const data = localStorage.getItem("ingredients");
-    if (data) {
-      setIngredients1(JSON.parse(data));
-    }
-  }, []);
-
-
   
 
   return (
@@ -81,6 +83,12 @@ function App() {
               ingredients={ingredients2}
               setIngredients={setIngredients2}
             />
+            </Route>
+            <Route exact path="/drinks">
+            <Customize3
+              ingredients={ingredients3}
+              setIngredients={setIngredients3}
+            />
           </Route>
           <Route path="/checkout">
             <Checkout ingredients={ingredients} />
@@ -90,6 +98,9 @@ function App() {
           </Route>
           <Route path="/checkout2">
             <Checkout2 ingredients={ingredients2} />
+          </Route>
+          <Route path="/checkout3">
+            <Checkout3 ingredients={ingredients3} />
           </Route>
         </Switch>
       </Router>

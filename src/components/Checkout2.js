@@ -42,7 +42,7 @@ export default function Checkout2({ ingredients }) {
       <div style={{ flex: 1 }}>
         {success && (
           <div style={{ textAlign: "center" }}>
-            <img src={Deliveryman} alt="pizzaman" height="300px" />
+            <img src={Deliveryman} alt="deliveryman" height="300px" />
             <div style={{ fontFamily: "Open Sans Condensed", fontSize: 35 }}>
             Order Recieved, Thank you for ordering
             </div>
