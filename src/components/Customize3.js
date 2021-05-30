@@ -1,10 +1,11 @@
 import React from "react";
-import Chicken from "../assets/chicken_toppings.png";
+import Red from "../assets/red.png";
+import Pink from "../assets/strawberry.png";
 import Glass from "../assets/glass.png";
 import Blue from "../assets/bluedrink.png";
 import Stb from "../assets/stb.png";
-import Basil from "../assets/Basil.png";
-import Tomato from "../assets/ketchup.png";
+import Orange from "../assets/orange.png";
+import Yellow from "../assets/yellow.png";
 import { motion } from "framer-motion";
 import { useHistory } from "react-router-dom";
 
@@ -32,7 +33,18 @@ export default function Customize3({ ingredients, setIngredients }) {
             transition={{ duration: 1 }}
             className="ingredients z4"
           >
-            <img src={Basil} alt="Drinks" height="100%" width="100%" />
+            <img src={Red} alt="Drinks" height="500px" width="380px" style={{marginLeft:"60px"}} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+              y: ingredients["Mango Shake"] ? 100 : -100,
+              opacity: ingredients["Mango Shake"] ? 1 : 0,
+            }}
+            transition={{ duration: 1 }}
+            className="ingredients z4"
+          >
+            <img src={Yellow} alt="Drinks" height="500px" width="380px" style={{marginLeft:"60px"}} />
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -48,23 +60,23 @@ export default function Customize3({ ingredients, setIngredients }) {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
-              y: ingredients["ketchup"] ? 100 : -100,
-              opacity: ingredients["ketchup"] ? 1 : 0,
+              y: ingredients["orange juice"] ? 100 : -100,
+              opacity: ingredients["orange juice"] ? 1 : 0,
             }}
             transition={{ duration: 1 }}
             className="ingredients z4"
           >
-            <img src={Tomato} alt="Drinks" height="100%" width="100%" />
+            <img src={Orange} alt="Drinks" height="500px" width="380px" style={{marginLeft:"60px"}} />
           </motion.div>
           <motion.div
             initial={{ scale: 0 }}
             animate={{
-              scale: ingredients["chicken"] ? 1 : 0,
+              scale: ingredients["strawberry shake"] ? 1 : 0,
             }}
             transition={{ duration: 0.3 }}
             className="cheese z1"
           >
-            <img src={Chicken} alt="Drinks" height="100%" width="100%" />
+            <img src={Pink} alt="Drinks" height="500px" width="380px" style={{marginLeft:"60px"}} />
           </motion.div>
 
           <motion.div
@@ -97,11 +109,11 @@ export default function Customize3({ ingredients, setIngredients }) {
           <span className="checkmark"></span>
         </label> */}
         <label className="container-checkbox">
-          Basil
+          Mango Shake
           <input
             type="checkbox"
-            checked={ingredients["basil"]}
-            onChange={(event) => onChange(event.currentTarget.checked, "basil")}
+            checked={ingredients["Mango Shake"]}
+            onChange={(event) => onChange(event.currentTarget.checked, "Mango Shake")}
           />
           <span className="checkmark"></span>
         </label>
@@ -115,12 +127,12 @@ export default function Customize3({ ingredients, setIngredients }) {
           <span className="checkmark"></span>
         </label>
         <label className="container-checkbox">
-          Ketchup
+          Orange Juice
           <input
             type="checkbox"
-            checked={ingredients["ketchup"]}
+            checked={ingredients["orange juice"]}
             onChange={(event) =>
-              onChange(event.currentTarget.checked, "ketchup")
+              onChange(event.currentTarget.checked, "orange juice")
             }
           />
           <span className="checkmark"></span>
@@ -137,12 +149,12 @@ export default function Customize3({ ingredients, setIngredients }) {
           <span className="checkmark"></span>
         </label>
         <label className="container-checkbox">
-          Chicken Toppings
+          Strawberry Shake
           <input
             type="checkbox"
-            checked={ingredients["Chicken"]}
+            checked={ingredients["strawberry shake"]}
             onChange={(event) =>
-              onChange(event.currentTarget.checked, "chicken")
+              onChange(event.currentTarget.checked, "strawberry shake")
             }
           />
           <span className="checkmark"></span>
