@@ -6,10 +6,12 @@ import Checkout from "./components/Checkout";
 import Checkout1 from "./components/Checkout1";
 import Checkout2 from "./components/Checkout2";
 import Checkout3 from "./components/Checkout3";
+import Checkout4 from "./components/Checkout4";
 import Customize1 from "./components/Customize1";
 import Home from "./components/Home";
 import Customize2 from "./components/Customize2";
 import Customize3 from "./components/Customize3";
+import Customize4 from "./components/Customize4";
 function App() {
   const [ingredients, setIngredients] = useState({
     basil: false,
@@ -39,6 +41,15 @@ function App() {
   });
 
   const [ingredients3, setIngredients3] = useState({
+    basil: false,
+    cheese: false,
+    mushroom: false,
+    olive: false,
+    pineapple: false,
+    tomato: false,
+  });
+
+  const [ingredients4, setIngredients4] = useState({
     basil: false,
     cheese: false,
     mushroom: false,
@@ -90,6 +101,12 @@ function App() {
               setIngredients={setIngredients3}
             />
           </Route>
+          <Route exact path="/burger">
+            <Customize4
+              ingredients={ingredients4}
+              setIngredients={setIngredients4}
+            />
+            </Route>
           <Route path="/checkout">
             <Checkout ingredients={ingredients} />
           </Route>
@@ -101,6 +118,9 @@ function App() {
           </Route>
           <Route path="/checkout3">
             <Checkout3 ingredients={ingredients3} />
+          </Route>
+          <Route path="/checkout4">
+            <Checkout4 ingredients={ingredients4} />
           </Route>
         </Switch>
       </Router>
