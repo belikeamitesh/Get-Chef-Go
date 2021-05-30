@@ -33,7 +33,7 @@ export default function Customize2({ ingredients, setIngredients }) {
             transition={{ duration: 1 }}
             className="ingredients z4"
           >
-            <img src={Basil} alt="Pizza Base" height="100%" width="100%" />
+            <img src={Basil} alt="Noodles Basil" height="100%" width="100%" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -44,20 +44,9 @@ export default function Customize2({ ingredients, setIngredients }) {
             transition={{ duration: 1 }}
             className="ingredients z4"
           >
-            <img src={Olive} alt="Pizza Base" height="100%" width="100%" />
+            <img src={Olive} alt="Noodle Olive" height="100%" width="100%" />
           </motion.div>
 
-          {/* <motion.div
-            initial={{ opacity: 0 }}
-            animate={{
-              y: ingredients["pineapple"] ? 100 : -100,
-              opacity: ingredients["pineapple"] ? 1 : 0,
-            }}
-            transition={{ duration: 1 }}
-            className="ingredients z3"
-          >
-            <img src={Pineapple} alt="Pizza Base" height="100%" width="100%" />
-          </motion.div> */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
@@ -72,8 +61,6 @@ export default function Customize2({ ingredients, setIngredients }) {
           <motion.div
             initial={{ scale: 0 }}
             animate={{
-              // y: ingredients["cheese"] ? 100 : -100,
-              // opacity: ingredients["cheese"] ? 1 : 0,
               scale: ingredients["chicken"] ? 1 : 0,
             }}
             transition={{ duration: 0.3 }}
@@ -91,26 +78,15 @@ export default function Customize2({ ingredients, setIngredients }) {
             transition={{ duration: 1 }}
             className="ingredients z4"
           >
-            <img src={Mushroom} alt="Pizza Base" height="100%" width="100%" />
+            <img src={Mushroom} alt="Noodles" height="100%" width="100%" />
           </motion.div>
 
           <motion.div transition={{ duration: 1 }} className="">
-            <img src={Noodles} alt="Pizza Base" height="100%" width="100%" />
+            <img src={Noodles} alt="Noodles Base" height="100%" width="100%" />
           </motion.div>
         </div>
       </div>
       <div style={{ flex: 1, padding: 40 }}>
-        {/* <label className="container-checkbox">
-          Pineapple
-          <input
-            type="checkbox"
-            checked={ingredients["pineapple"]}
-            onChange={(event) =>
-              onChange(event.currentTarget.checked, "pineapple")
-            }
-          />
-          <span className="checkmark"></span>
-        </label> */}
         <label className="container-checkbox">
           Basil
           <input

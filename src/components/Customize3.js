@@ -32,7 +32,7 @@ export default function Customize3({ ingredients, setIngredients }) {
             transition={{ duration: 1 }}
             className="ingredients z4"
           >
-            <img src={Basil} alt="Pizza Base" height="100%" width="100%" />
+            <img src={Basil} alt="Drinks" height="100%" width="100%" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -43,7 +43,7 @@ export default function Customize3({ ingredients, setIngredients }) {
             transition={{ duration: 1 }}
             className="ingredients z4"
           >
-            <img src={Blue} alt="Pizza Base" height="500px" width="380px" style={{marginLeft:"60px"}} />
+            <img src={Blue} alt="Drinks" height="500px" width="380px" style={{marginLeft:"60px"}} />
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -54,7 +54,7 @@ export default function Customize3({ ingredients, setIngredients }) {
             transition={{ duration: 1 }}
             className="ingredients z4"
           >
-            <img src={Tomato} alt="Tomato" height="100%" width="100%" />
+            <img src={Tomato} alt="Drinks" height="100%" width="100%" />
           </motion.div>
           <motion.div
             initial={{ scale: 0 }}
@@ -64,7 +64,7 @@ export default function Customize3({ ingredients, setIngredients }) {
             transition={{ duration: 0.3 }}
             className="cheese z1"
           >
-            <img src={Chicken} alt="Chicken" height="100%" width="100%" />
+            <img src={Chicken} alt="Drinks" height="100%" width="100%" />
           </motion.div>
 
           <motion.div
