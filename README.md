@@ -12,7 +12,7 @@ Try it out : https://get-chef-go.netlify.app/
 Inspired from : https://youtu.be/8YNYhUapAzY
 
 ## Get Chef Go Home Page
-![clone images](/getcgefgo-home.png)
+![clone images](/getchefgo-home.png)
 
 ## Get Chef Go Customize Page
 ![clone images](/getchefgo-custom.png)
