@@ -19,3 +19,8 @@ Inspired from : https://youtu.be/8YNYhUapAzY
 
 ## Get Chef Go Confirm Order Page
 ![clone images](/getchefgo-confirm.png)
+
+## Contributors
+* ` Amitesh kumar `
+* ` Anshul Aditya `
+* ` Ravi Kumar `
